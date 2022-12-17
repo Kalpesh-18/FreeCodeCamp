@@ -24,3 +24,8 @@ const randomClickFunction = function () {
 
 // Binding the function with onclick functionality
 htmlbody.onclick = randomClickFunction;
+
+//Array example
+const myArray = [10, 20, 30, 40];
+myArray.push(50);
+myArray.reverse();

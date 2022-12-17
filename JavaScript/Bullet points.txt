@@ -3,3 +3,5 @@
 - Js has two runtimes
     1. NodeJs runtime - Uses the V8 engine (DOM does not exist like in Browser)
     2. Browser runtime - Google Chrome uses V8 engine using Just in time compilation method, Firefox uses Spidermonkey.
+- Js Style guide gives information as to how Js should be written like naming conventions etc.
+- Js is dynamically typed language
