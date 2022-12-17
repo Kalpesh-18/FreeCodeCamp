@@ -42,7 +42,7 @@ Google Workspace is a bundled offereing of SaaS products also known as G-Suite (
 3. Iaas - Provides access to networking features, computers and data storage. (Azure, AWS, Google Cloud) Admins
 
 # Shared Responsiblity Model
-![GCP](./img/Screenshot%2022-12-17%165420.png)
+![GCP](./img/Screenshot%202022-12-17%20165420.png)
 
 Responsibility in the Cloud - If you can configure or store it then you are responsible for it
 
