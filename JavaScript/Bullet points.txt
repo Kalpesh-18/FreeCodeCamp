@@ -1,0 +1,5 @@
+- Vanilla Js is Plain Js without any additional libraries or frameworks
+- ECMA is a standard to have universal compatibility
+- Js has two runtimes
+    1. NodeJs runtime - Uses the V8 engine (DOM does not exist like in Browser)
+    2. Browser runtime - Google Chrome uses V8 engine using Just in time compilation method, Firefox uses Spidermonkey.
