@@ -38,8 +38,8 @@ const objectVariable = {
     prop1: 100
 };
 
-let name = objectVariable.name;
-newName = objectVariable['name'];
+let name = objectVariable.name;         //Stores the value pointed by name key of objectVariable
+let newName = objectVariable['name'];   //Stores the value pointed by name key of objectVariable
 
 // Functions
 const functionVariable = function() {
