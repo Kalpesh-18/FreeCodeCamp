@@ -21,7 +21,7 @@ The first product offered by GCP was App Engine in 2008
 
 Google Workspace is a bundled offereing of SaaS products also known as G-Suite (Calendar, Gmail, Meet, Drive, Sheets, Docs, Slides)
 
-# Benefits of Cloud Computing
+## Benefits of Cloud Computing
 1. Cost-effective - Pay as you Go.
 2. Global - Lauch workloads anywhere
 3. Secure - Security is taken care of by cloud provider, you have ability to configure access down to granular level
@@ -30,18 +30,18 @@ Google Workspace is a bundled offereing of SaaS products also known as G-Suite (
 6. Elastic - Automate scaling
 7. Current - The hardware and managed software is patched, upgraded and replaced by cloud provider without any interruption
 
-# Cloud Services for IaaS
+## Cloud Services for IaaS
 1. Compute - Virtual computer running code
 2. Storage - Virtual hard-drive storing files
 3. Networking - Virtual network able to define connections
 4. Databases - Virtual database for storing and reporting data
 
-# Types of Cloud Computing
+## Types of Cloud Computing
 1. SaaS - Product run and managed by service provider (Salesforce, Gmail, Office 365, twitter) Customers
 2. PaaS - Dont worry about provisioning, configuring or understanding the hardware. Focus on deployment and management of apps (Beanstalk, App Engine, Heroku) Developers
 3. Iaas - Provides access to networking features, computers and data storage. (Azure, AWS, Google Cloud) Admins
 
-# Shared Responsiblity Model
+## Shared Responsiblity Model
 ![GCP](./img/Screenshot%202022-12-17%20165420.png)
 
 Responsibility in the Cloud - If you can configure or store it then you are responsible for it
@@ -50,42 +50,55 @@ Responsibility of the Cloud - If you cannot configure it then Google is responsi
 
 The customer is responsible for the data and the configuration of access controls that resides in GCP
 
-# Shared Responsibility Model for Compute
+## Shared Responsibility Model for Compute
 
 ![GCP](./img/Screenshot%202022-12-18%20192015.png)
 
-## IaaS
+### IaaS
 1. Bare Metal (Compute Engine)
+
 Google provides only Physical machine
+
 User can configures Host OS, hypervisor etc, comparitively expensive
 
 2. Virtual Machines (Compute Engine)
+
 Google takes care of hypervisor, physical machine
+
 User can configure Guest OS, Container runtime
 
 3. Containers (Google Kubernetes Engine GKE)
+
 Google takes care of OS, hypervisor, container runtime
+
 User can configure containers, deployment of containers, storage of containers
 
-## PaaS
+### PaaS
 1. Managed Platforms (App Engine)
+
 Google takes care of Servers, OS, Networking, Storage, Security
+
 User uploads code, configures environment, deployment strategies etc
 
-## SaaS
+### SaaS
 1. Word Processor (Google Docs)
+
 Google takes care of Servers, OS, Networking, Storage, Security
+
 User writes docs, manages files, config access control
 
-## FaaS
+### FaaS
 1. Functions (Cloud Functions)
+
 Google takes care of everything except the code
+
 User only uploads the code. Cold starts is a drawback of serverless computing model.
+
 eg - Cloud Run is a serveless container
 
 ![GCP](./img/Screenshot%202022-12-18%20191733.png)
 
-# Cloud Deployment Models
+## Cloud Deployment Models
 ### Public Cloud
 Everything built on the Cloud Provider. Also know as ***Cloud Native***
 ### Private Cloud
@@ -95,13 +108,13 @@ Using both On-Premise and Cloud Service Provider
 ### Cross Cloud
 Using Multiple Cloud Providers aka ***multi-cloud***. **Anthos is GCP's offering for a control plane for compute across multiple CSP's and On-premise environment**
 
-# Total Cost of Ownership
+## Total Cost of Ownership
 ### Capex - Capital Expenditure
 Spending money upfront on physical infrastucture deducting that expense from your tax bill over time.
 ### Opex - Operational Expenditure
 The customer only has to be concerned with non-physical costs.
 
-# Cloud Architecture Terminologies
+## Cloud Architecture Terminologies
 ### Availability
 Ability for your service to remain available by ensuring there is **no single point of failure** and ensure a certain level of performance.
 
