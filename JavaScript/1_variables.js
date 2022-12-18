@@ -2,20 +2,24 @@ const firstVariable = 'Learning to code gives you superpowers';
 const secondVariable = 10;
 const thirdVariable = { firstProperty: 'hello world' };
 
-// const variable;              const would not allow this as it needs declarations to be initialized as well
-//                              let allows to declare and initialize separately
+/* const variable;
+   const would not allow this as it needs declarations to be initialized as well
+   let allows to declare and initialize separately */
 let variable;
 variable = 20;
 
 
-// Difference between var, const and let
-var newVariable = 10;           // redeclaration and reassignment is allowed multiple times, not advised to use
+/* Difference between var, const and let
+   redeclaration and reassignment is allowed multiple times, not advised to use */
+var newVariable = 10;           
 var newVariable = 20;
 
-const newConstVariable = 10;    // No redeclaration, reassignment allowed
-//                                 const newConstVariable = 20; THIS WILL GIVE ERROR
+/* No redeclaration, reassignment allowed
+   const newConstVariable = 20; THIS WILL GIVE ERROR */
+const newConstVariable = 10;    
 
-let counter = 0;                //Only reassignment allowed
+// Only reassignment allowed
+let counter = 0;                
 counter = counter + 1;
 
 // typeof keyword
