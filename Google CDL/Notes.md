@@ -1,17 +1,16 @@
 # Google Cloud Digital Leader Program
 
 ## Evolution of Cloud Hosting
-
-### 1. Dedicated Server
+- Dedicated Server
 One physical machine dedicated to single business, Runs a single web-app/site. Very expensive, High maintenance, High Security*
 
-### 2. Virtual Private Server
+- Virtual Private Server
 One physical machine dedicated to single business which is virtualized into sub-machines, Runs multiple web-apps/sites
 
-### 3. Shared Hosting
+- Shared Hosting
 One physical machine shared by hundred of businesses, relies on most tenants under utilizing their resources. Very cheap, very limited.
 
-### 4. Cloud Hosting
+- Cloud Hosting
 Multiple physical machines that act as one system. the system is abstracted into multiple cloud services. Flexible, Scalable, Secure, Cheap, Highly Configurable.
 
 ## GCP Architecture
@@ -99,49 +98,49 @@ eg - Cloud Run is a serveless container
 ![GCP](./img/Screenshot%202022-12-18%20191733.png)
 
 ## Cloud Deployment Models
-### Public Cloud
+- Public Cloud
 Everything built on the Cloud Provider. Also know as ***Cloud Native***
-### Private Cloud
+- Private Cloud
 Everything built on company's datacenters. Also known as ***On-Premise***. The cloud could be Openstack
-### Hybrid Cloud
+- Hybrid Cloud
 Using both On-Premise and Cloud Service Provider
-### Cross Cloud
+- Cross Cloud
 Using Multiple Cloud Providers aka ***multi-cloud***. **Anthos is GCP's offering for a control plane for compute across multiple CSP's and On-premise environment**
 
 ## Total Cost of Ownership
-### Capex - Capital Expenditure
+- Capex - Capital Expenditure
 Spending money upfront on physical infrastucture deducting that expense from your tax bill over time.
-### Opex - Operational Expenditure
+- Opex - Operational Expenditure
 The customer only has to be concerned with non-physical costs.
 
 ## Cloud Architecture Terminologies
-### Availability
+- Availability
 Ability for your service to remain available by ensuring there is **no single point of failure** and ensure a certain level of performance.
 
 Cloud Load Balancing - Load balancer allows you to evenly distribute traffic to multiple servers in one or more datacenter. If a server becomes unavailable the load balancer would route to only available servers.
 
 Running you service across multiple zones makes sure that you don't suffer downtime.
-### Scalability
+- Scalability
 Ability to increase you capacity based on increasing demand of traffic. (Vertical and horizontal scaling)
-### Elasticity
+- Elasticity
 Ability to **automatically** increase or **decrease** your capacity based on demands. (Scaling in and Scaling Out).
 
 **Managed Instance Groups (MIGs)** does the function of autoscaling in GCP.
-### Fault Tolerance
+- Fault Tolerance
 Ability for your service to ensure there is no single point of failure. **Preventing** the chance of failure
 
 **Fail-overs** is when you have a plain to shift traffic to a redundant system in case the primary system fails
 
 You can use **Cloud-DNS**, which is a DNS-service that can detect a failing primary system and fail-over to a stand-by system.
-### Durability
+- Durability
 Ability to recover from a disaster and to prevent the loss of data. Solutions that recover from a disaster is known as **Disaster Recovery**
 Eg. Backup of data
 
 ## Introduction to Global Infrastructure
 Global infrastructure is global presence of datacenters, networking and cloud resources.
-### 1. Regions - Independent areas that consist of zones (25 regions)
-### 2. Edge Network - Practice of having compute and storage as close as possible to deliver low latency & save bandwidth
-### 3. Points of Presence (PoP) - Intermediate location between GCP region and end user (Could br third-party datacenter)
+- Regions - Independent areas that consist of zones (25 regions)
+- Edge Network - Practice of having compute and storage as close as possible to deliver low latency & save bandwidth
+- Points of Presence (PoP) - Intermediate location between GCP region and end user (Could br third-party datacenter)
 
 It is of three types
 
@@ -150,14 +149,14 @@ It is of three types
 2. CDN PoP - Serves cached websites, files, assets for faster loading
 
 3. Cloud Media Edge - Delivers media content like videos
-### 4. Zones - Physical location made up of one or more datacenters (1 region - 3 zones generally)
+- Zones - Physical location made up of one or more datacenters (1 region - 3 zones generally)
 
 ## Resource Scoping
-### 1. Zonal Resource - Resouce in single zone single region
-### 2. Regional Resource - Resource in multiple zone single region
-### 3. Multi-regional Resource - Resource across multiple specific zones
-### 4. Global service - Resource reside globally
-### 5. Internal Services - Foundational services used by many other services. You don't interact with these services directly, they are managed by Google.
+- Zonal Resource - Resouce in single zone single region
+- Regional Resource - Resource in multiple zone single region
+- Multi-regional Resource - Resource across multiple specific zones
+- Global service - Resource reside globally
+- Internal Services - Foundational services used by many other services. You don't interact with these services directly, they are managed by Google.
 
 ## Data Residency
 In-order to achieve it we can use **Assured Workloads**, a feature that allows you to apply various security controls
