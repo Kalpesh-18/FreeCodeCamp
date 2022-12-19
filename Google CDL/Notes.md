@@ -136,3 +136,45 @@ You can use **Cloud-DNS**, which is a DNS-service that can detect a failing prim
 ### Durability
 Ability to recover from a disaster and to prevent the loss of data. Solutions that recover from a disaster is known as **Disaster Recovery**
 Eg. Backup of data
+
+## Introduction to Global Infrastructure
+Global infrastructure is global presence of datacenters, networking and cloud resources.
+### 1. Regions - Independent areas that consist of zones (25 regions)
+### 2. Edge Network - Practice of having compute and storage as close as possible to deliver low latency & save bandwidth
+### 3. Points of Presence (PoP) - Intermediate location between GCP region and end user (Could br third-party datacenter)
+
+It is of three types
+
+1. Edge PoP - User can quickly enter the GCP Network
+
+2. CDN PoP - Serves cached websites, files, assets for faster loading
+
+3. Cloud Media Edge - Delivers media content like videos
+### 4. Zones - Physical location made up of one or more datacenters (1 region - 3 zones generally)
+
+## Resource Scoping
+### 1. Zonal Resource - Resouce in single zone single region
+### 2. Regional Resource - Resource in multiple zone single region
+### 3. Multi-regional Resource - Resource across multiple specific zones
+### 4. Global service - Resource reside globally
+### 5. Internal Services - Foundational services used by many other services. You don't interact with these services directly, they are managed by Google.
+
+## Data Residency
+In-order to achieve it we can use **Assured Workloads**, a feature that allows you to apply various security controls
+- Personnel data access controls/ownership based on attributes
+- Encryption
+- You need to update Organization policy called as **Resource Location Restriction** and choose allowed regions
+
+## Cloud Interconnect
+It provides direct physical connections between on-premise and Google's network. It allows to transfer large amounts of data between networks, which can be more effective then purchasing additional bandwidth.
+
+It has two offerings
+- Dedicated - direct connection through a co-location facility (rented datacenter) - 10 to 200 Gbps
+- Partner - direct connection through a trusted third party - 50 Mbps to 10 Gbps
+
+## Latency
+**Latency** is the time delay between two physical systems
+
+**Lag** is noticeable delay between the actions of input and reactions of server sent back to the client
+- Inter-regional Latency - 500ms
+- Inter-zonal Latency - 10ms
