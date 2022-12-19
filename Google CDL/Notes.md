@@ -178,3 +178,78 @@ It has two offerings
 **Lag** is noticeable delay between the actions of input and reactions of server sent back to the client
 - Inter-regional Latency - 500ms
 - Inter-zonal Latency - 10ms
+
+## Burning Platform
+When a company **abandons old technology** for new technology with the uncertainty of success and can be motivated by fear that organizations future survival hinges on its digital tranformation.
+
+## Evolution of Computing Power
+The throughput measured at which a computer can complete a task.
+- General Computing (Compute Engine)
+    - Xeon CPU Processor
+- Tensor Computing (Cloud TPU)
+    - Tensors Processing Units 3.0
+    - **50x faster** than traditional CPUs
+- Quantum Computing (Google Quantum AI)
+    - Foxtail - 2016
+    - Bristlecone - 2017
+    - Sycamore - 2018
+    - **100 Million x faster**
+
+## Digital Transformation
+Digital transformation is replacing non-digital/ manual processes with digital processes or older digital technology with newer digital technology.
+
+## Google Cloud Solution Pillar
+- Infrastructure modernization
+    - Replacing legacy hardware and software systems
+    - Allows orgs to adopt hybrid architecture
+    - Google Anthos for managing both on premise and public cloud
+
+- Business applications platform portfolio
+    - Standardization across all offered cloud services
+    - Orgs can focus on config and interconnection of various systems instead of build own systems
+    - Cloud SDK, Cloud API, Cloud CLI, Google Cloud Documentation
+
+- Application mordernization
+    - Allows orgs to deliver applications globally and rapidly
+    - Automated deployment pipelines, AI-powered code reviews
+    - Apps remains available even in regional failure
+    - App Engine (Upload your code)
+
+- Database and storage solutions
+    - CSP have the guarantee of data durability as well as ability to migrate and secure data.
+    - Cloud Storage (99.5% Availability) Stores files and docs as objects
+
+- Smart Analytics
+    - Data on cloud can use Bigdata and BI cloud offerings by AI to analyze
+    - Looker is part of GCP for this functionality
+
+- Artificial Intelligence
+    - AI, ML, DL on cloud.
+    - Vertex AI (Unified platform for AI, ML, DL and AutoML)
+    - TensorFlow (Deep learning framework)
+
+- Security
+    - String mechanism for governance and compliance
+    - Easily, quickly audit and apply security controls.
+    - Identity and Access Management (IAM) - Role based access control and user management
+    - BeyondCorp - Zero trust model framework
+    - Security Command Center - Centralized visibility and control
+
+## Google Cloud Tools
+- Google Cloud Console (web based, unified console, alternative to CLI. Build, manage, and monitor everything)
+- Cloud SDK (Collection of software development tools in one package. CRUD on Google Cloud resources, offered in carious languages)
+- Cloud CLI (process commands to a computer program, OS implements in a shell or terminal)
+- Cloud Shell (Online environment with CLI and Online code editor)
+- Project
+    - Project is logical grouping of resources
+    - A cloud resource **must belong to a project**
+    - Project is made up of setting, permissions, metadata
+    - Project can't access other projects resources unless you ue shared VPC
+    - Resources within a single project can work together easily
+    - Each project has a name (us), ID (us/GCP), number(GCP)
+    - Project ID is unique, one time
+    - Each project to one biliing account, multiple project to same billing account
+    - Every resource within project must have unique name, but you can reuse name if in separate projects
+- Folders
+    - Folders allows you to logically group multiple projects that share common IAM permissions.
+    - Used to isolate projects for different departments/environments
