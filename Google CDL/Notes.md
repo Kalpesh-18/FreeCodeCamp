@@ -2,15 +2,19 @@
 
 ## Evolution of Cloud Hosting
 - Dedicated Server
+
 One physical machine dedicated to single business, Runs a single web-app/site. Very expensive, High maintenance, High Security*
 
 - Virtual Private Server
+
 One physical machine dedicated to single business which is virtualized into sub-machines, Runs multiple web-apps/sites
 
 - Shared Hosting
+
 One physical machine shared by hundred of businesses, relies on most tenants under utilizing their resources. Very cheap, very limited.
 
 - Cloud Hosting
+
 Multiple physical machines that act as one system. the system is abstracted into multiple cloud services. Flexible, Scalable, Secure, Cheap, Highly Configurable.
 
 ## GCP Architecture
@@ -99,40 +103,51 @@ eg - Cloud Run is a serveless container
 
 ## Cloud Deployment Models
 - Public Cloud
+
 Everything built on the Cloud Provider. Also know as ***Cloud Native***
 - Private Cloud
+
 Everything built on company's datacenters. Also known as ***On-Premise***. The cloud could be Openstack
 - Hybrid Cloud
+
 Using both On-Premise and Cloud Service Provider
 - Cross Cloud
+
 Using Multiple Cloud Providers aka ***multi-cloud***. **Anthos is GCP's offering for a control plane for compute across multiple CSP's and On-premise environment**
 
 ## Total Cost of Ownership
 - Capex - Capital Expenditure
+
 Spending money upfront on physical infrastucture deducting that expense from your tax bill over time.
 - Opex - Operational Expenditure
+
 The customer only has to be concerned with non-physical costs.
 
 ## Cloud Architecture Terminologies
 - Availability
+
 Ability for your service to remain available by ensuring there is **no single point of failure** and ensure a certain level of performance.
 
 Cloud Load Balancing - Load balancer allows you to evenly distribute traffic to multiple servers in one or more datacenter. If a server becomes unavailable the load balancer would route to only available servers.
 
 Running you service across multiple zones makes sure that you don't suffer downtime.
 - Scalability
+
 Ability to increase you capacity based on increasing demand of traffic. (Vertical and horizontal scaling)
 - Elasticity
+
 Ability to **automatically** increase or **decrease** your capacity based on demands. (Scaling in and Scaling Out).
 
 **Managed Instance Groups (MIGs)** does the function of autoscaling in GCP.
 - Fault Tolerance
+
 Ability for your service to ensure there is no single point of failure. **Preventing** the chance of failure
 
 **Fail-overs** is when you have a plain to shift traffic to a redundant system in case the primary system fails
 
 You can use **Cloud-DNS**, which is a DNS-service that can detect a failing primary system and fail-over to a stand-by system.
 - Durability
+
 Ability to recover from a disaster and to prevent the loss of data. Solutions that recover from a disaster is known as **Disaster Recovery**
 Eg. Backup of data
 
