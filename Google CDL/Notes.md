@@ -267,3 +267,90 @@ Digital transformation is replacing non-digital/ manual processes with digital p
 - Folders
     - Folders allows you to logically group multiple projects that share common IAM permissions.
     - Used to isolate projects for different departments/environments
+
+## Google Cloud Adoption Framework
+It is a whitepaper that determins an orgs readiness to adopt google cloud, steps to fill in knowledge gaps and develop new competencies.
+
+### 4 Themes
+- Learn 
+    - Upskilling tech teams
+    - Ability to augment IT staff with experienced partners
+    - Who is engaged, how widespread, efforts concentration, results effectiveness
+- Lead
+    - Extent of support from leadership to migrate to cloud
+    - Degree os cross functionality, collaboration and self motivasion of teams
+    - Team structure, Finance
+- Scale
+    - Extent to which you use cloud native services that reduce operational overhead and automate manual processes
+    - How is workload capacity allocated
+    - How are application updates managed
+- Secure
+    - Capability to protect your services from unauthorized access
+    - Multilayered, identity centric security model
+    - Depends on advanced maturity of other 3 themes
+
+### 3 Maturity Phases
+- Tactical (Short Term)
+    - Individual workloads are in place, but no coherent plan
+    - Focus on reducing cost of discrete systems
+    - Getting to cloud with minimal disruption
+    - No provision for scale
+- Strategic (Mid Term)
+    - Broader vision governs individual workloads, developed for future scale
+    - Adoption strategy involves people and processes
+- Transformational (Long Term)
+    - Cloud operations are functioning smoothly
+    - Focus on integrating data and insights working in cloud
+    - Existing data is transparently shared. New data is collected and analyzed
+
+### Cloud Maturity Scale
+![GCP](./img/Screenshot%202022-12-20%20115255.png)
+
+### Epics
+![GCP](./img/Screenshot%202022-12-20%20115707.png)
+
+### Programs
+[!GCP](./img/Screenshot%202022-12-20%20115813.png)
+
+## TAM (Technical Account Manager)
+A human resource assigned to work with your organization when paying for Google Cloud's Premium Support
+
+## Cloud Maturity Assessment
+It is a guided form to assess your orgs against GCAF along the four theme - Learn, Lead, Scale, Secure
+
+## Compute Services
+- ***Bare Metal***: Choose hardware/hypervisor, low latency on Google Cloud
+- ***Compute Engine (VMs)***: Create and deploy scalable, high-performance VMs
+- ***App Engine (PaaS)***: Deploy fully developed apps
+- ***Cloud GPUs***: Add GPUs to workloads for ML etc
+- ***Google Kubernetes Engine (GKE)***: Deploy scalable containerized applications on kubernetes
+- ***Sole tenant nodes (Dedicated VMs)***: Help meet compliance, keeping you instance physically separated with dedicated hardware
+- ***Cloud Functions (FaaS)***: Create serverless, single purpose functions
+- ***Cloud Run***: Serverless containers
+- ***Google Cloud VMware Engine***: Migrate VMware workloads on Google Cloud
+- ***Migrate for Compute Engine***: Migrate from on-premise or other cloud to Compute Engine.
+- ***Preemptible VM***: Deploy short lived compute instances for batch jobs and fault tolerant workloads
+- ***Shielded VMs***: Deploy hardened VMs on Google Cloud
+
+## Core Services
+### App Engine (PaaS)
+
+![GCP](./img/Screenshot%202022-12-20%20191851.png)
+
+Quickly deploy and scale web-apps without worrying about underlying infrastructure.
+- Your own Language/Container Runtime
+- ***Cloud Monitoring and Logging*** to monitor health and performance
+- ***Cloud Debugger and Error Reporting*** to daignose and fix bugs
+- ***Application Versioning*** to create various environments
+- ***Traffic splitting*** to route incoming requests to different app versions
+- ***App Engine Firewall*** to define access rules
+
+## Containers
+![GCP](./img/Screenshot%202022-12-20%20192144.png)
+
+## Kubernetes
+Container Orchestrator, currently managed by CNCF. Advantage over docker is the ability to run containers distributed acroos multiple VMs.
+
+Pod is group of one or more containers with shared storage, network resources and other settings.
+
+![GCP](./img/1%20kSRH4T8S1YmAuHbpgQ3Ylw.png)
