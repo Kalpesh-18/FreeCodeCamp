@@ -310,7 +310,7 @@ It is a whitepaper that determins an orgs readiness to adopt google cloud, steps
 ![GCP](./img/Screenshot%202022-12-20%20115707.png)
 
 ### Programs
-[!GCP](./img/Screenshot%202022-12-20%20115813.png)
+![GCP](./img/Screenshot%202022-12-20%20115813.png)
 
 ## TAM (Technical Account Manager)
 A human resource assigned to work with your organization when paying for Google Cloud's Premium Support
