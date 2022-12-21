@@ -353,4 +353,17 @@ Container Orchestrator, currently managed by CNCF. Advantage over docker is the 
 
 Pod is group of one or more containers with shared storage, network resources and other settings.
 
+Kubernetes is ideal for microservice architecture where a company has to manage tens to hundreds of services.
+
 ![GCP](./img/1%20kSRH4T8S1YmAuHbpgQ3Ylw.png)
+
+## Database Services
+- ***Bigquery (Serverless Data-Warehouse)***: Stores tb to pb of data using a NoSQL wide-column database, Built in ML
+- ***Cloud Spanner (Fully-Managed Relational Database)***: Proprietary relational databse designed for **scale**, Uses SQL
+- ***Cloud BigTable (No-SQL Key/Value store)***: Fully managed NoSQL database for large analytic and operational workloads
+- ***Cloud SQL (RDMS)***: MySQL, PostgreSQL, SQL server and database services
+- ***Firestore (No-SQL Document database)***: Add NoSQL document database access to mobile and webapps. **(FIRESTORE Store & Sync data in REALTIME)**
+- ***Memory store (In-memory)***: Achieve extreme performance using managed in memory data store service.
+- ***Database Migration Service (DMS)***: Serverless, easy, minimal downtime migration to Cloud SQL.
+
+## Database
