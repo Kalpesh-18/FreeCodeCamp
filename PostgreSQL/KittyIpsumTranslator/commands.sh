@@ -73,3 +73,9 @@ diff kitty_ipsum_1.txt doggy_ipsum_1.txt --color
 history
 
 history > command.txt
+
+#-----------------------------translate.sh---------------------------
+
+#!/bin/bash
+
+cat $1 | sed 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g' -r
